@@ -39,7 +39,7 @@ public class EmployeeEntity {
 	}
 	
 	
-	//@Column(name = "firstname") //use this step to give a different name to column
+	//@Column(name = "firstname")
 	public String getFirstname() {
 		return firstname;
 	}

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-//@CrossOrigin(origins = "http://localhost:8080")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class EmployeeController {
 	
@@ -58,7 +58,6 @@ public class EmployeeController {
 	        employee.setEmail(employeeDetails.getEmail());
 	        employee.setFirstname(employeeDetails.getFirstname());
 	        final EmployeeEntity updatedEmployee = service .saveEmployee(employee);
-	        //System.out.println("***********employee "+ResponseEntity.ok(updatedEmployee));
 	        return ResponseEntity.ok(updatedEmployee);
 	        
 	        
